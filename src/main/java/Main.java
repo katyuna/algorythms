@@ -39,7 +39,7 @@ public class Main {
         radixSort.printArray(arrayNums);
         System.out.println(" ");
 
-
+        arrayNums = new ArrayList<>(Arrays.asList(120, 203, 130, 600, 500, 908, 456, 101, 999, 100, 107, 707));
 
     }
 }
