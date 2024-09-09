@@ -12,17 +12,17 @@ public class RadixSort implements Sortable {
      */
     List<Integer> array;
 
-    public RadixSort(List<Integer> array) {
-        this.array = array;
+    public RadixSort(List<Integer> list) {
+        this.array = list;
     }
 
     @Override
-    public <T extends Comparable<T>> void sortArray(List<T> array) {
+    public <T extends Comparable<T>> void sortList(List<T> list) {
         // Проверяем, что элементы массива - это Integer
-        if (array.get(0) instanceof Integer) {
-            sortIntegers((List<Integer>) array);
-        } else if (array.get(0) instanceof String) {
-            sortStrings((List<String>) array);
+        if (list.get(0) instanceof Integer) {
+            sortIntegers((List<Integer>) list);
+        } else if (list.get(0) instanceof String) {
+            sortStrings((List<String>) list);
         } else {
             throw new UnsupportedOperationException("Реализован метод только для Integer и String");
         }

@@ -24,8 +24,8 @@ public class Main {
         System.out.println("СОРТИРОВКА ВСТАВКАМИ");
         Sortable insertionSort = new InsertionSort(arrayNums);
         System.out.print("Отсортированный массив: ");
-        insertionSort.sortArray(arrayNums);
-        insertionSort.printArray(arrayNums);
+        insertionSort.sortList(arrayNums);
+        insertionSort.printList(arrayNums);
         System.out.println(" ");
         System.out.println(" ");
 
@@ -35,8 +35,8 @@ public class Main {
         System.out.println("ПОРАЗРЯДНАЯ СОРТИРОВКА");
         Sortable radixSort = new RadixSort(arrayNums);
         System.out.print("Отсортированный массив: ");
-        radixSort.sortArray(arrayNums);
-        radixSort.printArray(arrayNums);
+        radixSort.sortList(arrayNums);
+        radixSort.printList(arrayNums);
         System.out.println(" ");
 
         arrayNums = new ArrayList<>(Arrays.asList(120, 203, 130, 600, 500, 908, 456, 101, 999, 100, 107, 707));

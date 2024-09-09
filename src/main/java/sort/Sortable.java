@@ -9,10 +9,11 @@ public interface Sortable {
     что T должен реализовывать интерфейс Comparable<T>.
     Это позволяет сравнивать элементы друг с другом.
      */
-    <T extends Comparable<T>> void sortArray(List<T> array);
+    <T extends Comparable<T>> void sortList (List<T> array);
     //public <T> void sortArray(List<T> array);
 
-    default <T> void printArray(List<T> array){
+
+    default <T> void printList (List<T> array){
         for(int i =0; i<array.size(); i++){
             System.out.print(array.get(i) + " ");
         }

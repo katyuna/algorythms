@@ -14,7 +14,7 @@ public class MergeSort implements Sortable{
     Этот процесс продолжается до тех пор, пока все элементы из обеих частей не будут добавлены в итоговый массив.
      */
     @Override
-    public <T extends Comparable<T>> void sortArray(List<T> array) {
+    public <T extends Comparable<T>> void sortList(List<T> array) {
 
     }
 }

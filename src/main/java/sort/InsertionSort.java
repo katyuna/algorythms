@@ -13,23 +13,23 @@ public class InsertionSort implements Sortable {
 
     List<Integer> array;
 
-    public InsertionSort(List<Integer> array) {
-        this.array = array;
+    public InsertionSort(List<Integer> list) {
+        this.array = list;
     }
 
     @Override
-    public <T extends Comparable<T>> void sortArray(List<T> array) {
+    public <T extends Comparable<T>> void sortList(List<T> list) {
         // Предполагаем, что первый элемент уже отсортирован
-        for (int i = 1; i < array.size(); i++) {
-            T key = array.get(i); // Элемент, который нужно вставить в отсортированную часть
+        for (int i = 1; i < list.size(); i++) {
+            T key = list.get(i); // Элемент, который нужно вставить в отсортированную часть
             int j = i - 1; // Индекс последнего элемента в отсортированной части
 
             // Сравниваем элементы, используя метод compareTo
-            while (j >= 0 && array.get(j).compareTo(key) > 0) {
-                array.set(j + 1, array.get(j)); // Сдвигаем элемент вправо, если он больше ключа
+            while (j >= 0 && list.get(j).compareTo(key) > 0) {
+                list.set(j + 1, list.get(j)); // Сдвигаем элемент вправо, если он больше ключа
                 j = j - 1; // Переходим к предыдущему элементу в отсортированной части
             }
-            array.set(j + 1, key); // Вставить key на место j+1
+            list.set(j + 1, key); // Вставить key на место j+1
         }
     }
 }

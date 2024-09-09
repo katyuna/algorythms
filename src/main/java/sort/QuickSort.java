@@ -18,7 +18,7 @@ public class QuickSort implements Sortable {
     После рекурсивной сортировки обеих частей, массив будет отсортирован. Поскольку каждая часть будет отсортирована, весь массив окажется отсортированным.
      */
     @Override
-    public <T extends Comparable<T>> void sortArray(List<T> array) {
+    public <T extends Comparable<T>> void sortList(List<T> array) {
 
     }
 }
